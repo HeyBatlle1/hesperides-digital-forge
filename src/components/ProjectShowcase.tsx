@@ -5,55 +5,55 @@ import { ExternalLink, Github, Code, Zap, Brain, Database } from 'lucide-react';
 const projects = [
   {
     id: 1,
-    title: 'Neural Code Assistant',
-    description: 'AI-powered code completion and refactoring tool using transformer models',
-    tech: ['Python', 'PyTorch', 'FastAPI', 'React'],
-    category: 'AI/ML',
+    title: 'Safety Companion',
+    description: 'Advanced Enterprise Safety Companion platform that leverages cutting-edge AI and data analytics to transform workforce protection through intelligent, user-centric solutions.',
+    tech: ['React', 'Node.js', 'PostgreSQL', 'Google Gemini AI'],
+    category: 'Enterprise',
     icon: Brain,
-    color: 'from-purple-500 to-pink-500',
-    github: 'https://github.com/bradleeburton/neural-code-assistant',
-    demo: 'https://neural-assistant.demo.com',
+    color: 'from-emerald-500 to-blue-500',
+    github: 'https://github.com/HeyBatlle1/Safety-Companion.com',
+    demo: 'https://safety-companion.com',
     featured: true
   },
   {
     id: 2,
-    title: 'Quantum Data Visualizer',
-    description: 'Real-time quantum computing simulation with 3D visualization',
-    tech: ['TypeScript', 'Three.js', 'WebGL', 'Rust'],
-    category: 'Simulation',
+    title: 'TrailMedic.org',
+    description: 'AI-Powered Emergency Medical Guidance for Wilderness Survival. Provides instant, AI-powered medical assessment and step-by-step emergency protocols specifically designed for wilderness survival situations.',
+    tech: ['React', 'TypeScript', 'Firebase', 'Gemini Pro API'],
+    category: 'Healthcare',
     icon: Zap,
-    color: 'from-blue-500 to-cyan-500',
-    github: 'https://github.com/bradleeburton/quantum-viz',
-    demo: 'https://quantum-viz.demo.com',
+    color: 'from-red-500 to-orange-500',
+    github: 'https://github.com/HeyBatlle1/TrailMedic.Org',
+    demo: 'https://trailmedic.org',
     featured: true
   },
   {
     id: 3,
-    title: 'Distributed ML Pipeline',
-    description: 'Scalable machine learning pipeline for processing terabytes of data',
-    tech: ['Go', 'Kubernetes', 'TensorFlow', 'PostgreSQL'],
-    category: 'Infrastructure',
+    title: 'Medical MCP Server',
+    description: 'Python-based server with dual Model Context Protocol (MCP) and HTTP REST API interfaces, providing shared core medical logic for trauma assessment and emergency medical protocols.',
+    tech: ['Python', 'FastAPI', 'MCP', 'Pydantic'],
+    category: 'Backend',
     icon: Database,
-    color: 'from-green-500 to-emerald-500',
-    github: 'https://github.com/bradleeburton/ml-pipeline',
+    color: 'from-blue-500 to-purple-500',
+    github: 'https://github.com/HeyBatlle1/medical-mcp-server',
     demo: null,
     featured: false
   },
   {
     id: 4,
-    title: 'Smart Contract Auditor',
-    description: 'Automated vulnerability detection for smart contracts using NLP',
-    tech: ['Solidity', 'Python', 'NLP', 'Blockchain'],
-    category: 'Security',
+    title: 'DocAmy',
+    description: 'Sophisticated AI-powered medical consultation platform built with React and TypeScript that integrates with Tavus API to provide emergency medical guidance through personalized video responses.',
+    tech: ['React', 'TypeScript', 'Tavus API', 'Node.js'],
+    category: 'Healthcare',
     icon: Code,
-    color: 'from-orange-500 to-red-500',
-    github: 'https://github.com/bradleeburton/contract-auditor',
-    demo: 'https://contract-auditor.demo.com',
+    color: 'from-purple-500 to-pink-500',
+    github: 'https://github.com/HeyBatlle1/DocAmy',
+    demo: null,
     featured: false
   }
 ];
 
-const categories = ['All', 'AI/ML', 'Simulation', 'Infrastructure', 'Security'];
+const categories = ['All', 'Enterprise', 'Healthcare', 'Backend'];
 
 export const ProjectShowcase = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
