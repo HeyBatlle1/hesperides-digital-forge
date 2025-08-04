@@ -1,6 +1,6 @@
 import { MatrixRain } from '@/components/MatrixRain';
 import { Navigation } from '@/components/Navigation';
-import { TerminalHero } from '@/components/TerminalHero';
+import { CustomTerminalHero } from '@/components/CustomTerminalHero';
 import { ProjectShowcase } from '@/components/ProjectShowcase';
 import { GitRepositories } from '@/components/GitRepositories';
 import { ContactSection } from '@/components/ContactSection';
@@ -17,7 +17,7 @@ const Index = () => {
       {/* Main Content */}
       <main>
         {/* Hero Section */}
-        <TerminalHero />
+        <CustomTerminalHero />
         
         {/* Project Showcase */}
         <ProjectShowcase />

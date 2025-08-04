@@ -143,21 +143,23 @@ export const TerminalHero = () => {
               transition={{ delay: 1.1 }}
               className="flex flex-wrap gap-4"
             >
-              <motion.button
+              <motion.a
+                href="#projects"
                 whileHover={{ scale: 1.05, boxShadow: 'var(--shadow-cyber)' }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-gradient-primary text-primary-foreground px-8 py-3 rounded-xl font-semibold transition-all duration-300"
+                className="bg-gradient-primary text-primary-foreground px-8 py-3 rounded-xl font-semibold transition-all duration-300 inline-block"
               >
                 Explore Projects
-              </motion.button>
+              </motion.a>
               
-              <motion.button
+              <motion.a
+                href="#contact"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="glass border border-primary/30 text-primary px-8 py-3 rounded-xl font-semibold hover:bg-primary/10 transition-all duration-300"
+                className="glass border border-primary/30 text-primary px-8 py-3 rounded-xl font-semibold hover:bg-primary/10 transition-all duration-300 inline-block"
               >
-                View Resume
-              </motion.button>
+                Get In Touch
+              </motion.a>
             </motion.div>
 
             {/* Floating Tech Icons */}

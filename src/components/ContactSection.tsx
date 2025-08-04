@@ -25,8 +25,23 @@ export const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    // Send email to jobboxproject@gmail.com
+    const emailData = {
+      to: 'jobboxproject@gmail.com',
+      subject: `New Contact Form Submission from ${formData.name}`,
+      body: `
+        Name: ${formData.name}
+        Email: ${formData.email}
+        Company: ${formData.company}
+        Message: ${formData.message}
+      `
+    };
+    
+    // Create mailto link for now (can be replaced with actual API call)
+    const mailtoLink = `mailto:jobboxproject@gmail.com?subject=${encodeURIComponent(emailData.subject)}&body=${encodeURIComponent(emailData.body)}`;
+    window.open(mailtoLink, '_blank');
+    
+    await new Promise(resolve => setTimeout(resolve, 1000));
     
     setIsSubmitting(false);
     setFormData({ name: '', email: '', company: '', message: '' });
@@ -178,14 +193,14 @@ export const ContactSection = () => {
 
               <div className="space-y-4">
                 <motion.a
-                  href="mailto:bradlee@hesperides-ai.com"
+                  href="mailto:jobboxproject@gmail.com"
                   whileHover={{ scale: 1.02, x: 10 }}
                   className="flex items-center space-x-4 p-4 bg-secondary/30 rounded-xl hover:bg-secondary/50 transition-all duration-300 group"
                 >
                   <Mail className="w-5 h-5 text-primary group-hover:text-primary-glow transition-colors" />
                   <div>
                     <div className="font-mono font-semibold">Email</div>
-                    <div className="text-sm text-muted-foreground">bradlee@hesperides-ai.com</div>
+                    <div className="text-sm text-muted-foreground">jobboxproject@gmail.com</div>
                   </div>
                 </motion.a>
 
@@ -231,14 +246,17 @@ export const ContactSection = () => {
                 technical challenges, and how we can collaborate to achieve your goals.
               </p>
 
-              <motion.button
+              <motion.a
+                href="https://calendly.com/jobboxproject"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, boxShadow: 'var(--shadow-cyber)' }}
                 whileTap={{ scale: 0.95 }}
                 className="w-full flex items-center justify-center space-x-3 px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold transition-all duration-300"
               >
                 <Calendar className="w-5 h-5" />
                 <span>Schedule Meeting</span>
-              </motion.button>
+              </motion.a>
             </div>
 
             {/* Status Indicator */}
