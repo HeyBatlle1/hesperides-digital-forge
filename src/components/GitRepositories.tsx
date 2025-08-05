@@ -5,99 +5,177 @@ import { GitBranch, Star, GitFork, Calendar, FileText, Code2 } from 'lucide-reac
 const repositories = [
   {
     id: 1,
-    name: 'hesperides-neural-engine',
-    description: 'Advanced neural network framework for edge computing',
-    language: 'Python',
-    stars: 1247,
-    forks: 156,
-    lastUpdate: '2 days ago',
-    readme: `# Hesperides Neural Engine
+    name: 'Safety-Companion.com',
+    description: 'A comprehensive safety platform providing real-time safety information and resources',
+    language: 'TypeScript',
+    stars: 28,
+    forks: 4,
+    lastUpdate: '3 weeks ago',
+    readme: `# Safety Companion
 
-A high-performance neural network framework designed for edge computing environments.
+A comprehensive safety platform providing real-time safety information and resources to help individuals and organizations make informed decisions about their safety and security.
 
 ## Features
-- ⚡ Ultra-fast inference on mobile devices
-- 🧠 Dynamic model compression
-- 🔧 Zero-config deployment
-- 📊 Real-time performance monitoring
+- 🚨 Real-time safety alerts and notifications
+- 📍 Location-based safety information
+- 🔒 Personal safety resources and tips
+- 📊 Safety analytics and reporting
+- 🌐 Community-driven safety network
 
-## Quick Start
-\`\`\`python
-from hesperides import NeuralEngine
+## Live Website
+Visit [safety-companion.com](https://safety-companion.com) to explore the platform.
 
-engine = NeuralEngine()
-model = engine.load_model("your_model.onnx")
-result = model.predict(input_data)
-\`\`\`
+## Technology Stack
+- React/TypeScript frontend
+- Node.js backend
+- Real-time data processing
+- Geolocation services
+- Responsive design
 
-## Performance
-- 10x faster than TensorFlow Lite
-- 50% smaller model size
-- 90% energy efficiency improvement`,
+## Mission
+Empowering communities with accessible safety information and tools to make informed decisions about their personal and collective security.`,
     private: false,
-    topics: ['neural-networks', 'edge-computing', 'ai', 'machine-learning']
+    topics: ['safety', 'web-app', 'typescript', 'react', 'security']
   },
   {
     id: 2,
-    name: 'quantum-algorithm-suite',
-    description: 'Quantum computing algorithms for optimization problems',
-    language: 'Q#',
-    stars: 892,
-    forks: 103,
-    lastUpdate: '5 days ago',
-    readme: `# Quantum Algorithm Suite
+    name: 'TrailMedic.Org',
+    description: 'Medical resource platform for outdoor enthusiasts and first responders',
+    language: 'TypeScript',
+    stars: 15,
+    forks: 2,
+    lastUpdate: '2 weeks ago',
+    readme: `# TrailMedic.org
 
-A comprehensive collection of quantum algorithms for solving complex optimization problems.
+A comprehensive medical resource platform designed specifically for outdoor enthusiasts, wilderness first responders, and medical professionals working in remote environments.
 
-## Algorithms Included
-- Quantum Approximate Optimization Algorithm (QAOA)
-- Variational Quantum Eigensolver (VQE)
-- Quantum Machine Learning protocols
-- Grover's Search variants
+## Features
+- 🏥 Medical protocols and procedures
+- 🎒 Emergency medical kit recommendations
+- 📚 Educational resources and training materials
+- 📍 Location-specific medical considerations
+- 🚑 Emergency response guidelines
 
-## Hardware Support
-- IBM Quantum devices
-- Google Cirq simulator
-- Microsoft Azure Quantum
+## Live Website
+Visit [trailmedic.org](https://trailmedic.org) to access medical resources.
 
-## Installation
-\`\`\`bash
-pip install quantum-algorithm-suite
-\`\`\``,
+## Target Audience
+- Wilderness first responders
+- Outdoor enthusiasts and hikers
+- Medical professionals in remote settings
+- Search and rescue teams
+- Adventure tour guides
+
+## Technology Stack
+- Modern web technologies
+- Mobile-responsive design
+- Offline capability for remote areas
+- Medical content management system
+
+## Mission
+Providing accessible, reliable medical information and resources to enhance safety and response capabilities in outdoor and remote environments.`,
     private: false,
-    topics: ['quantum-computing', 'optimization', 'algorithms', 'quantum-ml']
+    topics: ['medical', 'wilderness', 'first-aid', 'outdoor', 'emergency-response']
   },
   {
     id: 3,
-    name: 'blockchain-security-analyzer',
-    description: 'AI-powered smart contract vulnerability detection',
-    language: 'Solidity',
-    stars: 2156,
-    forks: 287,
-    lastUpdate: '1 day ago',
-    readme: `# Blockchain Security Analyzer
+    name: 'medical-mcp-server',
+    description: 'Medical Model Context Protocol server for healthcare AI applications',
+    language: 'Python',
+    stars: 7,
+    forks: 1,
+    lastUpdate: '1 week ago',
+    readme: `# Medical MCP Server
 
-Advanced AI system for detecting vulnerabilities in smart contracts before deployment.
+A specialized Model Context Protocol (MCP) server designed for medical and healthcare AI applications, providing structured access to medical data and resources.
 
-## Detection Capabilities
-- Reentrancy attacks
-- Integer overflow/underflow
-- Access control issues
-- Gas optimization problems
-- Logic errors
+## Features
+- 🏥 Medical data protocols and standards
+- 🤖 AI model integration for healthcare
+- 📊 Structured medical information access
+- 🔒 HIPAA-compliant data handling
+- 🔌 Extensible plugin architecture
 
-## Supported Blockchains
-- Ethereum
-- Binance Smart Chain
-- Polygon
-- Arbitrum
-
-## CLI Usage
+## Installation
 \`\`\`bash
-bsa analyze contract.sol --format json
-\`\`\``,
+pip install medical-mcp-server
+\`\`\`
+
+## Usage
+\`\`\`python
+from medical_mcp_server import MedicalMCPServer
+
+server = MedicalMCPServer()
+server.start()
+\`\`\`
+
+## Supported Protocols
+- HL7 FHIR
+- DICOM integration
+- Medical terminology standards
+- Clinical decision support
+
+## Security & Compliance
+- HIPAA compliance features
+- Data encryption and security
+- Audit logging
+- Access control mechanisms
+
+## Use Cases
+- Healthcare AI applications
+- Medical research platforms
+- Clinical decision support systems
+- Medical data integration`,
     private: false,
-    topics: ['blockchain', 'security', 'smart-contracts', 'ai-analysis']
+    topics: ['medical', 'mcp', 'healthcare-ai', 'python', 'api-server']
+  },
+  {
+    id: 4,
+    name: 'DocAmy',
+    description: 'AI-powered medical documentation and analysis platform',
+    language: 'Python',
+    stars: 12,
+    forks: 3,
+    lastUpdate: '4 days ago',
+    readme: `# DocAmy
+
+An AI-powered medical documentation and analysis platform designed to streamline healthcare workflows and improve patient care through intelligent document processing.
+
+## Features
+- 📄 Automated medical document processing
+- 🤖 AI-powered clinical analysis
+- 📊 Medical data extraction and structuring
+- 🔍 Intelligent search and retrieval
+- 📈 Clinical insights and analytics
+
+## Core Capabilities
+- Natural language processing for medical texts
+- Clinical note analysis and summarization
+- Medical coding assistance
+- Patient data organization
+- Compliance and audit trails
+
+## Technology Stack
+- Python backend with ML/AI frameworks
+- Natural language processing engines
+- Medical terminology databases
+- Secure data processing pipeline
+- API-first architecture
+
+## Benefits
+- Reduced documentation time for healthcare providers
+- Improved accuracy in medical record keeping
+- Enhanced clinical decision making
+- Streamlined workflow automation
+- Better patient care coordination
+
+## Security & Privacy
+- HIPAA-compliant processing
+- End-to-end encryption
+- Secure API access
+- Audit logging and monitoring`,
+    private: false,
+    topics: ['ai', 'medical-documentation', 'nlp', 'healthcare', 'python']
   }
 ];
 
